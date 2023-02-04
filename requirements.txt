@@ -1,0 +1,9 @@
+pandas
+xlrd
+openpyxl
+pyyaml
+contexttimer
+xlsxwriter
+natsort
+pysam
+PyQt5
