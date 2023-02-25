@@ -1,6 +1,6 @@
-# gene-compare
+# Gene Variant Identifier
 
-Compare multiple pools of variants to filter out background mutations and identify candidate mutations at the gene and positional level.
+GeneVariantIdentifier multiple pools of variants to filter out background mutations and identify candidate mutations at the gene and positional level.
 
 
 ## :warning: This is an unsupported pre-release. :warning:

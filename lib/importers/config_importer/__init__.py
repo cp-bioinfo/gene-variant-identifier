@@ -4,7 +4,7 @@ import yaml
 
 
 class ConfigImporter(object):
-    def __init__(self, path=None, filename="gene_compare.yaml"):
+    def __init__(self, path=None, filename="gene_variant_identifier.yaml"):
         if path is None:
             path = []
         elif not isinstance(path, list) and not isinstance(path, tuple):

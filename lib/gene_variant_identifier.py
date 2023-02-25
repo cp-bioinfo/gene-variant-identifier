@@ -19,7 +19,7 @@ CONFIG_FIELDS = {
 }
 
 
-class Compare(object):
+class GeneVariantIdentifier(object):
     def __init__(self, pool_root):
         if not pool_root or not os.path.isdir(pool_root):
             raise RuntimeError("Please call using a directory, not a specific file.")
@@ -226,15 +226,15 @@ class Compare(object):
 
     @staticmethod
     def add_background_mutations(df):
-        return Compare._add_hit_column(df, c.background, [c.chromo, c.pos],  c.pool)
+        return GeneVariantIdentifier._add_hit_column(df, c.background, [c.chromo, c.pos], c.pool)
 
     @staticmethod
     def add_candidate_pos_mutations(df):
-        return Compare._add_hit_column(df, c.cand_pos, [c.pool, c.chromo, c.pos],  c.sample)
+        return GeneVariantIdentifier._add_hit_column(df, c.cand_pos, [c.pool, c.chromo, c.pos], c.sample)
 
     @staticmethod
     def add_candidate_gene_mutations(df):
-        return Compare._add_hit_column(df, c.cand_gene, [c.gene_id], c.sample)
+        return GeneVariantIdentifier._add_hit_column(df, c.cand_gene, [c.gene_id], c.sample)
 
     @staticmethod
     def add_candidate_gene_hh_ratios(df):

@@ -6,12 +6,12 @@ from PyQt5 import QtWidgets
 from PyQt5.QtCore import QCoreApplication
 from contexttimer import Timer
 
-from lib import Compare
+from lib import GeneVariantIdentifier
 
 
 def run(pool_root):
     with Timer(factor=1000) as t:
-        c = Compare(pool_root)
+        c = GeneVariantIdentifier(pool_root)
         outfile = c.apply()
         print("total runtime: {}.ms\n".format(round(t.elapsed, 1)))
         print(outfile)
